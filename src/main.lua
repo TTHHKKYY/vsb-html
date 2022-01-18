@@ -38,7 +38,7 @@ Board.TopSurface = Enum.SurfaceType.Smooth
 Board.BottomSurface = Enum.SurfaceType.Smooth
 Board.Parent = workspace
 
-local Parser = Xml.new()
+local Parser = XML.new()
 local File = Parser:ParseXmlText(Http:GetAsync(Scope .. "/src/test.html"))
 
 print(File)
