@@ -34,3 +34,9 @@ Board.CFrame = CFrame.new(0,4,-30) * CFrame.Angles(0,math.rad(180),0)
 Board.TopSurface = Enum.SurfaceType.Smooth
 Board.BottomSurface = Enum.SurfaceType.Smooth
 Board.Parent = workspace
+
+local Xml = Include("/src/include/xml.lua")
+local Objects = Include("/src/include/objects.lua")
+
+print(Xml)
+print(Objects)
