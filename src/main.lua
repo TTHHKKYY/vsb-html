@@ -12,6 +12,9 @@ local function Include(x)
 	end
 end
 
+local XML = Include("/src/include/xml.lua")
+local Objects = Include("/src/include/objects.lua")
+
 local Board = Instance.new("Part")
 local Interface = Instance.new("SurfaceGui")
 local Container = Instance.new("Frame")
@@ -35,8 +38,7 @@ Board.TopSurface = Enum.SurfaceType.Smooth
 Board.BottomSurface = Enum.SurfaceType.Smooth
 Board.Parent = workspace
 
-local Xml = Include("/src/include/xml.lua")
-local Objects = Include("/src/include/objects.lua")
+local Parser = Xml.new()
+local File = Parser:ParseXmlText(Http:GetAsync(Scope .. "/src/test.html"))
 
-print(Xml)
-print(Objects)
+print(File)
