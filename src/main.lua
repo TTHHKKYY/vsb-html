@@ -1,5 +1,5 @@
 local Http = game:GetService("HttpService")
-local Scope = "https://raw.githubusercontent.com/TTHHKKYY/script-builder/main/"
+local Scope = "https://raw.githubusercontent.com/TTHHKKYY/vsb-html/main/"
 
 local function Include(x)
 	local File = Http:GetAsync(Scope .. x)
